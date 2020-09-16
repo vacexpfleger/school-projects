@@ -29,14 +29,13 @@ int main(int argc, char** argv) {
     int exponent;
     FILE *soubor2;
     FILE *soubor;
-    soubor = fopen("VSTUP", "r");
+    soubor = fopen(VSTUP, "r");
     if (soubor == NULL) {
         printf("Soubor %s se nepodarilo otevrit.", VSTUP);
-        getchar();
         return EXIT_FAILURE;
     }
     
-    soubor2 = fopen("VYSTUP", "w");
+    soubor2 = fopen(VYSTUP, "r+");
     if (soubor2 == NULL) {
         printf("Soubor %s se nepodarilo otevrit.", VYSTUP);
         getchar();
@@ -45,7 +44,7 @@ int main(int argc, char** argv) {
     
     while(fscanf(soubor,"%d %d",&zaklad, &exponent)==2){
         printf("%2d * %2d = %10u \n",zaklad,exponent,mocnina(zaklad,exponent));
-        
+        fprintf("%2d * %2d = %10u \n",zaklad,exponent,mocnina(zaklad,exponent));
     }
     
     if (fclose(soubor)==EOF) {
