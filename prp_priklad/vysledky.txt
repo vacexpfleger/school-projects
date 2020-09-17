@@ -1,0 +1,18 @@
+1.	940 metru	2344 sekund	0.40 m/s
+2.	19258 metru	2484 sekund	7.75 m/s
+3.	467 metru	19 sekund	24.58 m/s
+4.	7639 metru	2959 sekund	2.58 m/s
+5.	13503 metru	356 sekund	37.93 m/s
+6.	29335 metru	1693 sekund	17.33 m/s
+7.	19116 metru	247 sekund	77.39 m/s
+8.	7566 metru	1009 sekund	7.50 m/s
+9.	22816 metru	1419 sekund	16.08 m/s
+10.	19047 metru	1055 sekund	18.05 m/s
+11.	14001 metru	2525 sekund	5.54 m/s
+12.	16131 metru	1358 sekund	11.88 m/s
+13.	26615 metru	612 sekund	43.49 m/s
+14.	12644 metru	158 sekund	80.03 m/s
+15.	17555 metru	2414 sekund	7.27 m/s
+
+Prumerna draha je 15108 metru.
+Ze souboru cisla.txt bylo pricteno 15 dvojic cisel.
