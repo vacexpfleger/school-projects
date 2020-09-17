@@ -10,6 +10,7 @@ int main(int argc, char** argv) {
     int drahaComplete=0;
     int drahaAvg;
     float rychlost;
+    float drahakm;
     
     FILE *soubor;
     FILE *soubor2;
@@ -27,9 +28,10 @@ int main(int argc, char** argv) {
     }
 
     while(fscanf(soubor,"%d %d",&draha, &cas)==2){
+        drahakm = (float)draha/1000;
         rychlost = (float)draha/cas;
         printf("%d.\t%d metru\t%d sekund\t%.2f m/s\n",poradi,draha,cas,rychlost);
-        fprintf(soubor2,"%d.\t%d metru\t%d sekund\t%.2f m/s\n",poradi,draha,cas,rychlost);
+        fprintf(soubor2,"%d.\t%.3f km\t%d sekund\t%.2f m/s\n",poradi,drahakm,cas,rychlost);
         drahaComplete += draha;
         poradi++;
     }
